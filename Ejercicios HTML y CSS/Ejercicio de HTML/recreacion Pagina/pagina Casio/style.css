@@ -1,0 +1,244 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+#apartadoPrincipal {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.logo {
+    width: 8%;
+    height: 35%;
+}
+
+.opciones {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 55rem;
+}
+
+.opciones>li {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.opciones>span {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.busqueda {
+    background-color: rgb(255, 255, 255);
+    width: 22%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.barraBusqueda {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 11.5px;
+    color: rgb(143, 143, 143);
+    box-shadow: 0px 1.5px 1px rgb(119, 120, 121);
+    border: none;
+}
+
+.content-icon {
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+
+}
+
+.icon {
+    font-size: 15px;
+    margin-right: 10px;
+    color: black;
+    margin-left: 5px;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    background-image: url(imagenes/imagen\ proyecto.avif);
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedorFlechas {
+    width: 97%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.flecha {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 205, 205);
+    border-radius: 100px;
+    font-size: 30px;
+    border: 1px solid black;
+
+}
+
+
+.iconGalleta {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 75px;
+    height: 75px;
+    margin-top: 450px;
+    margin-right: 90%;
+    border-radius: 100px;
+    border: 2px solid white;
+}
+
+/* Responsividad para tablets */
+@media(min-width:667px) and (max-width:1024px) {
+    #apartadoPrincipal {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .logo {
+        width: 100px;
+        height: 30px;
+        margin: 0 50px;
+    }
+
+    .opciones {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        height: 70px;
+        margin: auto 30px;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    .opciones>li {
+        display: none;
+    }
+
+    .opciones>span {
+        display: none;
+    }
+
+    .busqueda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 60px;
+    }
+
+    .barraBusqueda {
+        width: 35px;
+        height: 35px;
+        box-shadow: none;
+        font-size: 40px;
+        
+    }
+    .barraBusqueda>span{
+        display: none;
+    }
+
+    .content-icon>.icon {
+        font-size: 25px;
+    }
+
+    main {
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+    }
+    .iconGalleta{
+        margin-top: 320px;
+        margin-right: 85%;
+    }
+}
+
+/* responsividad para telefonos */
+@media(max-width:600px) {
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+
+    #apartadoPrincipal {
+        
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+        height: 15vh;
+        background-color: gainsboro;
+    }
+
+    .logo {
+        width: 100px;
+        height: 30px;
+        margin: 0 20px;
+    }
+
+    .opciones {
+        display: none;
+    }
+
+    .busqueda {
+        width: 150px;
+        height: 45px;
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .barraBusqueda {
+        width: 23px;
+        height: 23px;
+        font-size: 25px;
+        box-shadow: none;
+    }
+    .barraBusqueda>span{
+        display: none;
+    }
+    main {
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+    }
+
+    .iconGalleta {
+        margin-top: 350px;
+        margin-right: 60%;
+    }
+}

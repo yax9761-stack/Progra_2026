@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Responsiva con Unidades CSS</title>
+  <style>
+    /* 1. Uso de VH: Forzar a que el fondo ocupe toda la altura de la pantalla */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f0f2f5;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+    }
+
+    /* 2. Uso de % y VW: Contenedor principal que se adapta al ancho de la pantalla */
+    .wrapper {
+      width: 90%;          /* Ocupa el 90% del ancho en pantallas pequeñas */
+      max-width: 400px;    /* No crecerá más de 400px en pantallas grandes */
+      padding: 2vw;        /* El espacio alrededor cambia dinámicamente según el tamaño de la pantalla */
+    }
+
+    /* Tarjeta */
+    .card {
+      background-color: #ffffff;
+      /* 3. Uso de PX: Ideal para bordes finos y sombras estables que no deben escalar */
+      border: 1px solid #e0e0e0; 
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card-image {
+      width: 100%;         /* La imagen siempre llena el 100% del ancho de la tarjeta */
+      height: 200px;       /* Altura fija para que todas las imágenes se vean uniformes */
+      object-fit: cover;
+    }
+
+    /* 4. Uso de REM: Estructura general y textos accesibles basados en la raíz (1rem = 16px) */
+    .card-content {
+      padding: 1.5rem;     /* Equivale a 24px. Mantiene un espaciado limpio y legible */
+    }
+
+    .card-title {
+      font-size: 1.5rem;   /* Equivale a 24px. Escala correctamente si el usuario aumenta la letra del navegador */
+      margin: 0 0 0.75rem 0; /* Margen inferior de 12px */
+      color: #333;
+    }
+
+    .card-description {
+      font-size: 1rem;     /* Equivale a 16px (tamaño base estándar) */
+      line-height: 1.5;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    /* 5. Uso de EM: Componente aislado (Botón) */
+    /* Si en el futuro cambias el font-size del botón, su padding y esquinas se adaptarán solos */
+    .btn-primary {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.25em; /* Proporcional al tamaño de la letra del botón */
+      
+      font-size: 0.9rem;    /* Tamaño base del botón usando REM (aprox 14.4px) */
+      padding: 0.6em 1.2em; /* El espaciado interno se calcula en base a sus propios 0.9rem */
+      
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="card">
+      <img src="https://unsplash.com" alt="Zapatilla deportiva" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Zapatillas Deportivas</h2>
+        <p class="card-description">Diseñadas para ofrecer la máxima comodidad y rendimiento en tus entrenamientos diarios. Su suela ligera amortigua cada paso de forma óptima.</p>
+        <a href="#" class="btn-primary">Comprar ahora</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

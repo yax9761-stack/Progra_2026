@@ -1,0 +1,16 @@
+.elemento{
+    background-color: blue;
+    width: 800px;
+    height: 800px;
+    margin: 400px;
+    transition: transform 0.5s;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.elemento:hover{
+    transform: rotate(90deg);
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+}   

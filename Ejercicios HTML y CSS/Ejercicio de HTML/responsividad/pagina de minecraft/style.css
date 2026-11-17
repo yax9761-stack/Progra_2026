@@ -1,0 +1,328 @@
+    body {
+        padding: 0%;
+        margin: 0%;
+        background-color: rgb(31, 31, 31);
+    }
+
+    #contenedorPrincipal {
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        height: 175vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        color: white;
+        font-family: 'Minecraft', sans-serif;
+        font-size: 100px;
+        margin-top: 50px;
+    }
+
+    a {
+        color: green;
+        width: auto;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+    #contenedorDeImagenes {
+        background-color: rgb(31, 31, 31);
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 10px;
+    }
+
+    .minecraftUno {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img1.avif);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftDos {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img2.avif);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftTres {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img3.webp);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftCuatro {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img4.avif);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftCinco {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img5.avif);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftSeis {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img6.avif);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftSiete {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img7.avif);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftOcho {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img8.jpg);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftNueve {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img9.webp);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .minecraftDiez {
+        background-color: white;
+        margin: auto;
+        width: 265px;
+        height: 240px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url(imagenes/img10.jpg);
+        background-size: cover;
+        border-bottom: 3px solid gray;
+    }
+
+    .texto {
+        background-color: rgba(0, 0, 0, 0.589);
+        padding: 10px;
+        height: 27%;
+        font-family: 'Minecraft', sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+
+    .texto:hover {
+        background-color: rgba(0, 0, 0, 0.589);
+        padding: 10px;
+        height: 50%;
+        font-family: 'Minecraft', sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+
+    /* primer parte de responsividad(Tablets) */
+    @media(min-width:568px) and (max-width:1224px) {
+        body {
+            padding: 0%;
+            margin: 0%;
+            /* background-color: rgb(31, 31, 31); */
+        }
+
+        .titulo {
+            color: white;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 50px;
+            margin-top: 50px;
+
+        }
+
+        #contenedorPrincipal {
+            background-color: rgb(31, 31, 31);
+            width: 100%;
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contenedorDeImagenes {
+            background-color: rgb(31, 31, 31);
+            width: 90%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            padding: 10px;
+        }
+
+        .seccionTendencias {
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .seccionTendencias>h1 {
+            color: white;
+            margin-left: -70%;
+            margin-bottom: 30px;
+        }
+
+        .contenedorCardsTendencias {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            width: 80%;
+            height: 65%;
+
+        }
+
+        .cardTendencia1 {
+            background-image: url(img/el\ poligamo.webp);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+
+
+        .cardTendencia2 {
+            background-image: url(img/intercambiados.webp);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+
+        .cardTendencia3 {
+            background-image: url(img/peleas.webp);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+
+        .cardTendencia4 {
+            background-image: url(img/rosario\ tijeras.webp);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            border-radius: 5px;
+
+        }
+
+        .cardTendencia5 {
+            background-image: url(img/kung\ fu\ panda.webp);
+            background-position: center;
+            background-size: cover;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: end;
+        }
+    }
+
+
+    /* segunda parte de responsividad(telefonos) */
+    @media(min-width:275px) and (max-width:667px) {
+        body {
+            padding: 0%;
+            margin: 0%;
+            background-color: rgb(31, 31, 31);
+        }
+
+        .titulo {
+            color: white;
+            font-family: 'Minecraft', sans-serif;
+            font-size: 25px;
+            margin-top: 50px;
+        }
+
+        a {
+            color: green;
+            width: auto;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #contenedorPrincipal {
+            background-color: rgb(31, 31, 31);
+            width: 100%;
+            height: 375dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contenedorDeImagenes {
+            background-color: rgb(31, 31, 31);
+            width: 90%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            padding: 10px;
+        }
+
+    }

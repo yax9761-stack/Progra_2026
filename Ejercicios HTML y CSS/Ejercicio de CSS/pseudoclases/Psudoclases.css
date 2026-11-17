@@ -1,0 +1,104 @@
+#Principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* este es el hover */
+.cuadrado1 {
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;
+}
+
+.cuadrado1:hover {
+    background-color: blue;
+    color: wheat;
+}
+
+/* Este es el :active */
+.cuadrado2 {
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 10px ;
+}
+
+.cuadrado2:active {
+    color: red;
+    background-color: rebeccapurple;
+}
+
+/* este es el :first */
+.cuadrado3{
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;
+
+}
+.cuadrado3>p:first-child{
+    background-color: black;
+    color: green;
+}
+/* Este es el :Focus */
+.cuadrado4{
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;
+}
+
+a:focus{
+    border: 2px solid blue;
+    background-color: lightyellow;
+    outline: none;
+}
+/* Este es el Disableb*/
+.cuadrado5{
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;
+}
+.cuadrado6{
+    /* Este es el checked */
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;    
+}
+.cuadrado7{
+    /* Este es el Dir */
+    background-color: gray;
+    color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px ;       
+}

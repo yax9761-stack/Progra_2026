@@ -1,0 +1,53 @@
+
+
+
+/* selector universal */
+*{
+    color: rgb(5, 0, 0);
+}
+
+
+/* selector por etiqueta */
+h1 {
+    color: rgb(68, 141, 184);
+}
+
+img {
+    width: 120px;
+    height: 80px;
+}
+
+/* selector de hermanos */
+h1 + h2{
+    color: rgb(117, 28, 28);
+}
+
+
+/* Selector por id */
+#Imagen{
+    color: rgb(175, 83, 83);
+}
+
+
+/* Selector Descendiente */
+tr th{
+    color:rgb(46, 110, 88)
+}
+
+
+/*  Selector por clase */
+.Animales {
+    background-color: rgb(184, 102, 102);
+}
+
+.Especie {
+    background-color: rgb(143, 140, 182);
+}
+.Vivipado,.Pais{
+    background-color: rgb(199, 161, 161);
+}
+/* Selector de hijo directo */
+ tr > th{
+    color: rgb(23, 47, 56);
+}
+    
